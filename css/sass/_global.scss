@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+body{
+    font-family: $fontFamily;
+    overflow-x: hidden;
+}
+
+::selection{
+    background-color: #717171;
+    color: #fff;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3223333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg_color;
+    .spinner-border{
+        border-left-color:$main_color ;
+        border-bottom-color:$main_color ;
+        border-top-color:$main_color ;
+    }
+}
+
+.to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px 10px;
+    background-color: $main_color;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3366;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+}

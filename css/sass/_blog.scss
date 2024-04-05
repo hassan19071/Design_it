@@ -1,0 +1,164 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.blogs{
+    padding-bottom: 80px;
+    background-color: $alt_bg_color;
+    &.blog-container{
+        padding: 80px 0;
+        .blog{
+            p{
+                @include paragraphStyling;
+            }
+            a.link{
+                padding: 14px 30px;
+                background-color: $main_color;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @media (max-width:966px) {
+       padding: 80px 0;
+    }
+    .head{
+        h5{
+            @include smallHeader;
+        }
+        h1{
+            @include mainHeader;
+        }
+        a{
+            @include buttonHover;
+        }
+    }
+    .blog{
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .img{
+            overflow: hidden;
+            img{
+                width: 100%;
+                transition: .5s;
+            }
+            .date{
+                bottom: 0;
+                left: 0;
+                background-color: $main_color;
+                color: #fff;
+                padding: 10px 20px;
+                z-index: 3;
+                font-size: 14px;
+            }
+        }
+        .text{
+            background-color: $bg_color;
+            padding:30px;
+            .data{
+                display: flex;
+                color: #fff;
+                font-size: 14px;
+                svg{
+                    color: $main_color;
+                    margin-right: 7px;
+                }
+                span{
+                    color: #b1afaf;
+                }
+                div{
+                    &:last-of-type{
+                        margin-left: 20px;
+                    }
+                }
+            }
+            h3{
+                a{
+                    @include mediumHeader;
+                    text-decoration: none;
+                }
+                margin-top: 20px;
+            }
+        }
+    }
+    .details{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            border-left: 3px solid $main_color;
+            color: #fff;
+            padding-left: 10px;
+        }
+        .search{
+            background-color: $bg_color;
+            padding: 30px;
+            form{
+                input{
+                    width: 70%;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    background-color: #383737;
+                }
+                button{
+                    padding: 10px;
+                    border: none;
+                    background-color: $main_color;
+                    color: #fff;
+                }
+            }
+        }
+        .follow{
+            background-color: $bg_color;
+            padding: 30px;
+            .social-links{
+                a{
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #fff;
+                    background-color: #383737;
+                    transition: .3s;
+                    &:hover{
+                        background-color: $main_color;
+                    }
+                }
+            }
+        }
+        .categories{
+            background-color: $bg_color;
+            padding: 30px;
+            a{
+                display: block;
+                text-decoration: none;
+                margin: 20px 0;
+                color: #a4a2a2;
+            }
+        }
+        .tags{
+            background-color: $bg_color;
+            padding: 30px;
+            .tag{
+                a{
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    color: #a4a2a2;
+                    border: 1px solid #a4a2a2;
+                    margin: 5px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: .3s;
+                    &:hover{
+                        color: $main_color;
+                        border-color: $main_color;
+                    }
+                }
+            }
+        }
+    }
+}

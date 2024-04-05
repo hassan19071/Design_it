@@ -1,0 +1,132 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.blog-details{
+
+    background-color: $alt_bg_color;
+    padding: 80px 0;
+
+    .blog{
+        h3{
+            color: #fff;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #434242;
+            margin-bottom: 30px
+        }
+        p{
+            @include paragraphStyling;
+        }
+        .qoute{
+            background-color: $bg_color;
+            padding:40px 30px;
+            margin: 30px 0;
+            span{
+                color: $main_color;
+            }
+            h4{
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+        .tags{
+            h4{
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            .tag{
+                a{
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    color: #a4a2a2;
+                    border: 1px solid #a4a2a2;
+                    margin: 5px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: .3s;
+                    &:hover{
+                        color: $main_color;
+                        border-color: $main_color;
+                    }
+                }
+            }
+        }
+    }
+
+    .details{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            border-left: 3px solid $main_color;
+            color: #fff;
+            padding-left: 10px;
+        }
+        .search{
+            background-color: $bg_color;
+            padding: 30px;
+            form{
+                input{
+                    width: 70%;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    background-color: #383737;
+                }
+                button{
+                    padding: 10px;
+                    border: none;
+                    background-color: $main_color;
+                    color: #fff;
+                }
+            }
+        }
+        .follow{
+            background-color: $bg_color;
+            padding: 30px;
+            .social-links{
+                a{
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #fff;
+                    background-color: #383737;
+                    transition: .3s;
+                    &:hover{
+                        background-color: $main_color;
+                    }
+                }
+            }
+        }
+        .categories{
+            background-color: $bg_color;
+            padding: 30px;
+            a{
+                display: block;
+                text-decoration: none;
+                margin: 20px 0;
+                color: #a4a2a2;
+            }
+        }
+        .tags{
+            background-color: $bg_color;
+            padding: 30px;
+            .tag{
+                a{
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    color: #a4a2a2;
+                    border: 1px solid #a4a2a2;
+                    margin: 5px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: .3s;
+                    &:hover{
+                        color: $main_color;
+                        border-color: $main_color;
+                    }
+                }
+            }
+        }
+    }
+}

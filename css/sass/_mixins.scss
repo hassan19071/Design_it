@@ -1,0 +1,71 @@
+@use "./variables" as *;
+
+@mixin afterAndBefore($top,$left,$width,$height){
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+
+@mixin buttonHover{
+    background-color: $main_color;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 18px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    &::after{
+        @include afterAndBefore(0,0,100%,100%);
+        background-color: #e1dfdf33;
+        transition: .3s;
+        transform: translateX(-100%);
+    }
+    &:hover{
+        &::after{
+            transform: translateX(0);
+        }
+    }
+}
+
+@mixin mainHeader{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: calc(22px + 3vw);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@mixin smallHeader{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $main_color;
+    position: relative;
+    padding-left: 50px;
+    &::after{
+        transform: translateY(-50%);
+        background-color: $main_color;
+        @include afterAndBefore(50%,0,40px,1px)
+    }
+}
+
+@mixin paragraphStyling{
+    color: #a9a6a6;
+    font-size: 15px;
+}
+
+@mixin mediumHeader{
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+    transition: .3s;
+    &:hover{
+        color: $main_color;
+    }
+}

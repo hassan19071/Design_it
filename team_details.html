@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design it</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/team_details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="loading">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+    </div>
+
+    <div class="to-top position-fixed">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="navbar position-absolute w-100">
+            <div class="container px-lg-0">
+                <div class="nav-content w-100 d-flex align-items-center justify-content-between position-relative">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                    </div>
+                    <div class="links d-lg-block d-none">
+                        <ul class="list-unstyled m-0 d-flex align-items-center links-container">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="positon-relative">
+                                <a href="#">Services</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_details.html">Services Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Pages</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="team.html">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="team_details.html">Team details</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Blog</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="button">Send Request</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon d-lg-none">
+                        <span class="active"><i class="fa-solid fa-bars"></i></span>
+                        <span><i class="fa-solid fa-x"></i></span>
+                    </div>
+                    <div class="mobile-links d-lg-none position-absolute w-100">
+                        <ul class="list-unstyled main-links m-0">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Services <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_details.html">Services Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Pages <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="team_details.html">Team Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Blog <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog_details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar position-fixed fixed bg-dark w-100">
+            <div class="container px-lg-0">
+                <div class="nav-content w-100 d-flex align-items-center justify-content-between position-relative">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                    </div>
+                    <div class="links d-lg-block d-none">
+                        <ul class="list-unstyled m-0 d-flex align-items-center links-container">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="positon-relative">
+                                <a href="#">Services</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_details.html">Services Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Pages</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="team.html">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="team_details.html">Team details</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Blog</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="button">Send Request</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon d-lg-none">
+                        <span class="active"><i class="fa-solid fa-bars"></i></span>
+                        <span><i class="fa-solid fa-x"></i></span>
+                    </div>
+                    <div class="mobile-links d-lg-none position-absolute w-100">
+                        <ul class="list-unstyled main-links m-0">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Services <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_details.html">Services Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Pages <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="team_details.html">Team Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Blog <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog_details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-breadcrump">
+            <div class="text text-center">
+                <h1>Team Details</h1>
+                <nav aria-label="breadcrumb mt-4">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Team Details</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="team-details">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="member">
+                        <div class="img">
+                            <img src="imgs/team01.jpg" alt="team" class="w-100">
+                        </div>
+                        <div class="text">
+                            <h3>Personal Info</h3>
+                            <div class="info mt-4">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ms-3">Howard Holmes</span>
+                                    </li>
+                                    <li class="mt-3">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span class="ms-3">info@webexample.com</span>
+                                    </li>
+                                    <li class="mt-3">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="ms-3">980-786-098-09</span>
+                                    </li>
+                                    <li class="mt-3">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="ms-3">12/A, Miranda City Hall, NYC</span>
+                                    </li>
+                                    <li class="mt-3">
+                                        <i class="fa-solid fa-globe"></i>
+                                        <span class="ms-3">www.webexample.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-lg-0 mt-5">
+                    <div class="skills-container">
+                        <p>Pleasure and praising pain was born and I will give you a complete account of the systems, and expound the actually teachings of the great explorer of the truth, the master-builder of human uts happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally Nor who loves or pursues or desires to obtain pain of itself.</p>
+                        <p>Tempor nonummy metus lobortis. Sociis velit etiam, dapibus lectus vehicula pele llentesque cras pat fusce pharetra felis sapien varius Integer dis ads se purus sollicitudin dapibus et vivamus pharetra sit integer dictum in dise natoque an mus quis in. Facilisis inceptos nec, potenti nostra aenean lacinia varius semper ant nullam nulla primis placerat facilisis. Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras.</p>
+                        <div class="skills my-4">
+                            <div class="skill mb-4">
+                                <h4>Design</h4>
+                                <div class="percent-container position-relative">
+                                   <div class="percent one position-absolute">
+                                    <span class="position-absolute">80%</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <h4>Easy Manage</h4>
+                                <div class="percent-container position-relative">
+                                   <div class="percent two position-absolute">
+                                    <span class="position-absolute">90%</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h4>Project Organize</h4>
+                                <div class="percent-container position-relative">
+                                   <div class="percent three position-absolute">
+                                    <span class="position-absolute">70%</span>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgs mt-5">
+                            <img src="imgs/protfolio-img08.png" alt="portfolio" width="48%">
+                            <img src="imgs/protfolio-img09.png" alt="portfolio" width="48%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer>
+      <div class="container px-lg-0">
+        <div class="footer-content">
+             <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                        <p class="mt-4">Nam purus nibh, luctus at cursus vel, efficitur eu dui. Aenean tellus massa, euismod eu dictum in, tincidunt ac lacus. Quisque vitae tellus a nibh sollicitudin viverra id sed libero.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mt-4">
+                    <div class="links">
+                        <h3>our links</h3>
+                        <ul class="list-unstyled mt-4">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mt-4">
+                    <div class="links">
+                        <h3>our services</h3>
+                        <ul class="list-unstyled mt-4">
+                            <li>
+                                <a href="#">Architecture</a>
+                            </li>
+                            <li>
+                                <a href="#">Interior Work</a>
+                            </li>
+                            <li>
+                                <a href="#">Retial Designs</a>
+                            </li>
+                            <li>
+                                <a href="#">2D/3D Layouts</a>
+                            </li>
+                            <li>
+                                <a href="#">Inter Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="newsletter">
+                        <h3>our newsletter</h3>
+                        <form action="" class="mt-4 d-flex">
+                            <input type="email" placeholder="Your Email..." required>
+                            <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                        </form>
+                        <div class="social-links d-flex mt-4">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+      </div>
+      <div class="foot text-center">
+        <div class="container">
+            Copyright &copy; 2024 <span>Hassan khaled</span>. All rights reserved.
+        </div>
+      </div>
+   </footer>
+
+    <script src="/js/all.min.js"></script>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

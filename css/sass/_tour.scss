@@ -1,0 +1,48 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.tour{
+    background-image: url("/imgs/vedio-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bg_color;
+    .tour-video{
+        padding: 120px 0;
+        img{
+            cursor: pointer;
+        }
+        h1{
+            @include mainHeader;
+            margin-top: 20px;
+        }
+    }
+}
+
+.achievments{
+    background-color: $alt_bg_color;
+    .numbers{
+        background-color: $bg_color;
+        width: 100%;
+        padding: 50px 40px;
+        @media (min-width:967px) {
+            transform: translateY(-50%);
+            width: 90%;
+            margin:0 auto;
+        }
+        .number{
+            align-items: center;
+            margin: 10px 0;
+            h2{
+                color: $main_color;
+                font-size: calc(20px + 2vw);
+                width: 130px;
+            }
+            h6{
+                color: #fff;
+                text-transform: capitalize;
+                line-height: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.services{
+    padding: 80px 0;
+    background-color: $bg_color;
+    .head{
+        margin-bottom: 30px;
+        h5{
+            @include smallHeader;
+            width: 210px;
+            margin: auto
+        }
+        h1{
+            @include mainHeader;
+        }
+    }
+    .service{
+        padding: 25px 20px;
+        background-color: $alt_bg_color;
+        position: relative;
+        &::after{
+          @include afterAndBefore(0,0,0%,1px);
+          background-color: $main_color;
+          transition: .5s;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+        .text{
+            padding: 0 25px;
+            h3{
+               @include mediumHeader;
+            }
+            p{
+                @include paragraphStyling;
+            }
+        }
+    }
+}

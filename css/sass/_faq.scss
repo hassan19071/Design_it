@@ -1,0 +1,29 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.faq{
+    padding: 80px;
+    background-color: $alt_bg_color;
+    .questions{
+        .accordion-header{
+            button{
+                background-color: $alt_bg_color !important;
+                border: 1px solid #616060;
+                color: #aaa5a5;
+                box-shadow: none !important;
+            }
+        }
+        .accordion-collapse{
+            background-color: $alt_bg_color !important;
+            border: none !important;
+        }
+        .accordion-item{
+            border: none;
+            color: #aaa5a5;
+        }
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("https://icons8.com/icon/crPdT2DtHKlO/up-arrow") !important ;
+   }
+   
+}

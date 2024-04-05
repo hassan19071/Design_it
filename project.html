@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design it</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loading">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+    </div>
+
+    <div class="to-top position-fixed">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    
+    <header>
+        <div class="navbar position-absolute w-100">
+            <div class="container px-lg-0">
+                <div class="nav-content w-100 d-flex align-items-center justify-content-between position-relative">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                    </div>
+                    <div class="links d-lg-block d-none">
+                        <ul class="list-unstyled m-0 d-flex align-items-center links-container">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="positon-relative">
+                                <a href="#">Services</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_details.html">Services Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Pages</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="team.html">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="team_details.html">Team details</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Blog</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="button">Send Request</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon d-lg-none">
+                        <span class="active"><i class="fa-solid fa-bars"></i></span>
+                        <span><i class="fa-solid fa-x"></i></span>
+                    </div>
+                    <div class="mobile-links d-lg-none position-absolute w-100">
+                        <ul class="list-unstyled main-links m-0">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Services <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_details.html">Services Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Pages <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="team_details.html">Team Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Blog <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog_details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar position-fixed fixed bg-dark w-100">
+            <div class="container px-lg-0">
+                <div class="nav-content w-100 d-flex align-items-center justify-content-between position-relative">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                    </div>
+                    <div class="links d-lg-block d-none">
+                        <ul class="list-unstyled m-0 d-flex align-items-center links-container">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="positon-relative">
+                                <a href="#">Services</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_details.html">Services Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Pages</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="team.html">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="team_details.html">Team details</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#">Blog</a>
+                                <div class="drob position-absolute">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="button">Send Request</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon d-lg-none">
+                        <span class="active"><i class="fa-solid fa-bars"></i></span>
+                        <span><i class="fa-solid fa-x"></i></span>
+                    </div>
+                    <div class="mobile-links d-lg-none position-absolute w-100">
+                        <ul class="list-unstyled main-links m-0">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Services <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_details.html">Services Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="project.html">Project</a>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Pages <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="team_details.html">Team Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drob-down">
+                                <a class="position-relative d-flex justify-content-between">Blog <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="list-unstyled m-0">
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog_details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-breadcrump">
+            <div class="text text-center">
+                <h1>Project</h1>
+                <nav aria-label="breadcrumb mt-4">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Project</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="portfolio">
+        <div class="projects">
+            <div class="owl-carousel owl-theme projects-carousel">
+                <div class="item">
+                    <div class="project position-relative">
+                        <div class="img">
+                            <img src="imgs/protfolio-img01.png" alt="testimonial">
+                        </div>
+                        <div class="text px-4 position-absolute">
+                            <h3>Interior</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur officiis dolorem placeat maxime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project position-relative">
+                        <div class="img">
+                            <img src="imgs/protfolio-img03.png" alt="testimonial">
+                        </div>
+                        <div class="text px-4 position-absolute">
+                            <h3>Interior</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur officiis dolorem placeat maxime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project position-relative">
+                        <div class="img">
+                            <img src="imgs/protfolio-img02.png" alt="testimonial">
+                        </div>
+                        <div class="text px-4 position-absolute">
+                            <h3>Interior</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur officiis dolorem placeat maxime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project position-relative">
+                        <div class="img">
+                            <img src="imgs/protfolio-img01.png" alt="testimonial">
+                        </div>
+                        <div class="text px-4 position-absolute">
+                            <h3>Interior</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur officiis dolorem placeat maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="images-layout position-fixed top-0 end-0 start-0 bottom-0 d-flex align-items-center justify-content-center" id="image-layout">
+        <div class="close"><i class="fa-solid fa-x"></i></div>
+        <div class="img">
+            <img src="./imgs/protfolio-img01 (1).png" alt="testimonial">
+            <div class="num text-end text-white"><span class="num-of-img"></span> of <span class="total"></span></div>
+        </div>
+        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+        <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+    </div>
+
+    <div class="tour">
+        <div class="tour-video text-center">
+             <div class="container px-lg-0">
+                 <div class="text  py-4">
+                     <a href="#"><img src="imgs/play-button.png" alt="video"></a>
+                     <h1>take a tour of luxuri</h1>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+   <footer>
+      <div class="container px-lg-0">
+        <div class="footer-content">
+             <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/logo.png" alt="logo" width="180px">
+                        </a>
+                        <p class="mt-4">Nam purus nibh, luctus at cursus vel, efficitur eu dui. Aenean tellus massa, euismod eu dictum in, tincidunt ac lacus. Quisque vitae tellus a nibh sollicitudin viverra id sed libero.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mt-4">
+                    <div class="links">
+                        <h3>our links</h3>
+                        <ul class="list-unstyled mt-4">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mt-4">
+                    <div class="links">
+                        <h3>our services</h3>
+                        <ul class="list-unstyled mt-4">
+                            <li>
+                                <a href="#">Architecture</a>
+                            </li>
+                            <li>
+                                <a href="#">Interior Work</a>
+                            </li>
+                            <li>
+                                <a href="#">Retial Designs</a>
+                            </li>
+                            <li>
+                                <a href="#">2D/3D Layouts</a>
+                            </li>
+                            <li>
+                                <a href="#">Inter Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="newsletter">
+                        <h3>our newsletter</h3>
+                        <form action="" class="mt-4 d-flex">
+                            <input type="email" placeholder="Your Email..." required>
+                            <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                        </form>
+                        <div class="social-links d-flex mt-4">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+      </div>
+      <div class="foot text-center">
+        <div class="container">
+            Copyright &copy; 2024 <span>Hassan khaled</span>. All rights reserved.
+        </div>
+      </div>
+   </footer>
+
+    <script src="/js/all.min.js"></script>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

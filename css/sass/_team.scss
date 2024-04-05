@@ -1,0 +1,76 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.our-team{
+    padding: 80px 0;
+    background-color: $alt_bg_color;
+    .head{
+        h5{
+            @include smallHeader;
+            width: 300px;
+            margin:0 auto 20px;
+        }
+        h1{
+            @include mainHeader;
+            text-align: center;
+        }
+    }
+    .members{
+        .member{
+            margin-bottom: 20px;
+            &:hover{
+                .social-links{
+                    transform: translateX(0) !important;
+                }
+            }
+            .img{
+                overflow: hidden;
+                .social-links{
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 40px;
+                    background-color: $main_color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateX(100%);
+                    transition: .3s;
+                    a{
+                        margin: 10px 0;
+                        display: inline-block;
+                        color: $alt_bg_color;
+                        transition: .3s;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .text{
+                background-color: $bg_color;
+                h3{
+                    @include mediumHeader;
+                }
+                span{
+                    color: $main_color;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .owl-dots{
+            text-align: center;
+            button{
+                background-color: #434141;
+                width: 12px;
+                height: 12px;
+                border-radius: 10%;
+                margin:0 3px;
+                &.active{
+                    background-color: $main_color;
+                }
+            }
+        }
+    }
+}

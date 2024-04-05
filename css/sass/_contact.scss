@@ -1,0 +1,75 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.contact{
+    .data{
+        padding: 80px 0;
+        background-color: $bg_color;
+        section{
+            .icon{
+               .svg{
+                color: #fff;
+                width: 70px ;
+                height: 70px ;
+                background-color: $main_color;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 70px;
+                font-size: 30px;
+               }
+            }
+            .text{
+                h4{
+                    color: $main_color;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                p{
+                    color: #fff;
+                    font-size: 18px;
+                    padding-right: 20px;
+                }
+                a{
+                    color: #fff;
+                    font-size: 18px;
+                    padding-right: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .form{
+        padding: 80px 0;
+        background-color: $alt_bg_color;
+        .head{
+            h1{
+                @include mainHeader;
+                font-size: 35px !important;
+            }
+        }
+        form{
+            @media (min-width:976px) {
+                &{
+                    width: 70%;
+                    margin: 30px auto;
+                }
+            }
+            input,textarea{
+                background-color: $bg_color;
+                padding: 15px;
+                border: none !important;
+                outline: none ;
+                box-shadow: none;
+                color: #fff;
+            }
+            button{
+                width: 100%;
+                background-color: $main_color;
+                color: #fff;
+                border: none;
+                padding: 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

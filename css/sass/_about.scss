@@ -1,0 +1,29 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.about-us{
+    background-color: $alt_bg_color;
+    padding: 80px 0;
+    .text{
+        h5{
+           @include smallHeader;
+        }
+        h1{
+            @include mainHeader;
+        }
+        > p{
+            @include paragraphStyling;
+        }
+        .feature{
+            padding:0px 20px;
+            margin: 15px 0;
+            border-left: 3px solid $main_color;
+            p{
+                color: #fff;
+            }
+        }
+        a{
+            @include buttonHover;
+        }
+    }
+}
